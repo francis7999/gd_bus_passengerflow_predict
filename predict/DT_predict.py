@@ -1,0 +1,105 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import numpy as np
+from sklearn import tree
+from sklearn.utils import shuffle
+import load_X_Y
+import codecs
+import os
+
+def preprocess(filename):
+    X, y = load_X_Y.load_X_Y(filename)
+    X = np.array(X)
+    y = np.array(y)
+    rand_s = 20
+    X, y = shuffle(X, y, random_state=rand_s)
+    return X, y
+
+
+fout = codecs.open('DT_predict_data.txt', 'w', "utf-8")
+###############################################################################
+# Load data
+parent_path = os.path.dirname(os.getcwd())
+data_path = os.path.join(parent_path, 'train_data')
+file1_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
+file2_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
+file3_in = os.path.join(data_path, 'featureMat_holiday_line6_checked.txt')
+file4_in = os.path.join(data_path, 'featureMat_workday_line11_checked.txt')
+file5_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
+file6_in = os.path.join(data_path, 'featureMat_holiday_line11_checked.txt')
+X1, y1 = preprocess(file1_in)
+X2, y2 = preprocess(file2_in)
+X3, y3 = preprocess(file3_in)
+X4, y4 = preprocess(file4_in)
+X5, y5 = preprocess(file5_in)
+X6, y6 = preprocess(file6_in)
+work_weather = [[3, 23, 14, 1],
+                [16, 23, 17, 1],
+                [23, 24, 14, 6],
+                [3, 17, 10, 8]]
+
+rest_weather = [[10, 19, 6, 1],
+                [10, 20, 7, 1],
+                [10, 21, 8, 1]]
+
+###############################################################################
+# Fit regression model|
+clf1 = tree.DecisionTreeRegressor(min_samples_leaf=20)
+clf2 = tree.DecisionTreeRegressor(min_samples_leaf=6)
+clf3 = tree.DecisionTreeRegressor(min_samples_leaf=2)
+clf4 = tree.DecisionTreeRegressor(min_samples_leaf=20)
+clf5 = tree.DecisionTreeRegressor(min_samples_leaf=6)
+clf6 = tree.DecisionTreeRegressor(min_samples_leaf=2)
+clf1.fit(X1, y1)
+clf2.fit(X2, y2)
+clf3.fit(X3, y3)
+clf4.fit(X4, y4)
+clf5.fit(X5, y5)
+clf6.fit(X6, y6)
+
+###############################################################################
+# Predict new data
+for w in work_weather:
+    for i in range(6, 22, 1):
+        p = [i, w[0], w[1], w[2], w[3]]
+        b = list('2015010')
+        b.append(str(work_weather.index(w) + 4))
+        c = ''.join(b)
+        a1 = clf1.predict(p)
+        if i < 10:
+            out1 = ','.join([u'线路6', c, ''.join(['0', str(i)]), str(int(a1[0]))])
+        else:
+            out1 = ','.join([u'线路6', c, str(i), str(int(a1[0]))])
+        a4 = clf4.predict(p)
+        if i < 10:
+            out2 = ','.join([u'线路11', c, ''.join(['0', str(i)]), str(int(a4[0]))])
+        else:
+            out2 = ','.join([u'线路11', c, str(i), str(int(a4[0]))])
+        out1 = ''.join([out1, '\r\n'])
+        out2 = ''.join([out2, '\r\n'])
+        fout.write(out1)
+        fout.write(out2)
+
+for w in rest_weather:
+    for i in range(6, 22, 1):
+        p = [i, w[0], w[1], w[2], w[3]]
+        b = list('2015010')
+        b.append(str(rest_weather.index(w) + 1))
+        c = ''.join(b)
+        a2 = clf2.predict(p)
+        a3 = clf3.predict(p)
+        if i < 10:
+            out1 = ','.join([u'线路6', c, ''.join(['0', str(i)]), str(int(a2[0]))])
+        else:
+            out1 = ','.join([u'线路6', c, str(i), str(int(a2[0]))])
+        a5 = clf5.predict(p)
+        a6 = clf6.predict(p)
+        if i < 10:
+            out2 = ','.join([u'线路11', c, ''.join(['0', str(i)]), str(int(a5[0]))])
+        else:
+            out2 = ','.join([u'线路11', c, str(i), str(int(a5[0]))])
+        out1 = ''.join([out1, '\r\n'])
+        out2 = ''.join([out2, '\r\n'])
+        fout.write(out1)
+        fout.write(out2)
+fout.close()
