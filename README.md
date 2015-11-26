@@ -7,4 +7,4 @@ requirements:
 
 ------python2.7
 
-------numpy、matplotlib、scikit-learn
+------numpy、matplotlib、scipy、scikit-learn
