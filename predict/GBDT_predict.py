@@ -39,14 +39,14 @@ rest_weather = [[10, 19, 6, 1],
 
 ###############################################################################
 # Fit regression model|
-params1 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
-params2 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
-params4 ={'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
-params5 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
+params1 = {'n_estimators':3500, 'max_depth': 4, 'min_samples_split': 20,
+              'min_samples_leaf' : 18,'learning_rate': 0.001, 'loss': 'ls'}
+params2 = {'n_estimators':3000, 'max_depth': 5,
+              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
+params4 = {'n_estimators':3500, 'max_depth': 5,
+              'min_samples_leaf' : 16,'learning_rate': 0.001, 'loss': 'ls'}
+params5 = {'n_estimators':3000, 'max_depth': 5,
+              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
 clf1 = ensemble.GradientBoostingRegressor(**params1)
 clf2 = ensemble.GradientBoostingRegressor(**params2)
 clf4 = ensemble.GradientBoostingRegressor(**params4)

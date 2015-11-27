@@ -6,6 +6,7 @@ from sklearn.utils import shuffle
 import load_X_Y
 import codecs
 import os
+import matplotlib.pyplot as plt
 
 def preprocess(filename):
     X, y = load_X_Y.load_X_Y(filename)
@@ -41,10 +42,10 @@ rest_weather = [[10, 19, 6, 1],
 
 ###############################################################################
 # Fit regression model|
-clf1 = tree.DecisionTreeRegressor(min_samples_leaf=20)
-clf2 = tree.DecisionTreeRegressor(min_samples_leaf=6)
-clf4 = tree.DecisionTreeRegressor(min_samples_leaf=20)
-clf5 = tree.DecisionTreeRegressor(min_samples_leaf=6)
+clf1 = tree.DecisionTreeRegressor(min_samples_leaf=18)
+clf2 = tree.DecisionTreeRegressor(min_samples_leaf=5)
+clf4 = tree.DecisionTreeRegressor(min_samples_leaf=21)
+clf5 = tree.DecisionTreeRegressor(min_samples_leaf=5)
 clf1.fit(X1, y1)
 clf2.fit(X2, y2)
 clf4.fit(X4, y4)

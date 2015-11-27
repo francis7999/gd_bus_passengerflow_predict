@@ -14,7 +14,7 @@ import os
 # Load data
 parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
-file_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
+file_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
 X,y = load_X_Y.load_X_Y(file_in)
 X = np.array(X)
 y = np.array(y)
@@ -46,8 +46,8 @@ for rand_s in [10, 50, 100, 300, 500, 900, 1400, 4500, 3400, 22] :
 
     ###############################################################################
     # Fit regression model|
-    params = {'n_estimators':2000, 'max_depth': 3, 'min_samples_split': 1,
-                 'learning_rate': 0.005, 'loss': 'ls'}
+    params = {'n_estimators':3000, 'max_depth': 5,
+              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
     clf = ensemble.GradientBoostingRegressor(**params)
     clf.fit(X_train, y_train)
     ###############################################################################
@@ -98,8 +98,8 @@ for rand_s in [10, 50, 100, 300, 500, 900, 1400, 4500, 3400, 22] :
 mse_s = np.array(mse_s)
 print("mean_squared_error_of_testset: %f" % mse_s.mean())
 print("root_of_mean_squared_error_of_testset: %f" % math.sqrt(mse_s.mean()))
-print("n_estimators： %d, max_depth: %d, min_samples_split: %d, learning_rate: %f, loss_func: %s"
-      % (params['n_estimators'],  params['max_depth'],  params['min_samples_split'],  params['learning_rate'],  params['loss']))
+print("n_estimators： %d, max_depth: %d, min_samples_leaf: %d, learning_rate: %f, loss_func: %s"
+      % (params['n_estimators'],  params['max_depth'],  params['min_samples_leaf'],  params['learning_rate'],  params['loss']))
 #################################################################################
 #print mean of train error rates
 train_error_rates = np.array(train_error_rates)

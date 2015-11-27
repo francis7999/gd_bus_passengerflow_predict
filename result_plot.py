@@ -3,7 +3,7 @@
 import os
 import matplotlib.pyplot as plt
 cur_path = os.getcwd()
-data_path = os.path.join(cur_path, 'history_submitted_files/11.27')
+data_path = os.path.join(cur_path, 'history_submitted_files/11.28_v2')
 file_in1 = open(os.path.join(data_path, 'GBDT_predict_data.txt'))
 file_in2 = open(os.path.join(data_path, 'DT_predict_data.txt'))
 arrayOfLines1 = file_in1.readlines()
@@ -57,8 +57,14 @@ for line in listFromLines2:
         DT_line6_x[line[1]].append(line[2])
         DT_line6_y[line[1]].append(line[3])
 
-
-plt.figure(figsize = (15, 6))
-plt.plot(GBDT_line6_x['20150101'], GBDT_line6_y['20150101'], 'o',
-         DT_line6_x['20150101'], DT_line6_y['20150101'], 'or' )
+i = 1
+for key in GBDT_line6_x :
+    plt.figure(i, figsize = (20,14))
+    plt.subplot(1,1,1)
+    plt.plot(GBDT_line6_x[key], GBDT_line6_y[key], 'ob',label = 'GBDT_passenger flow')
+    plt.plot(DT_line6_x[key], DT_line6_y[key], 'or', label = 'DT_passenger flow' )
+    plt.legend(loc='lower left')
+    plt.xlabel(''.join([key, '_line6']))
+    plt.ylabel('passenger flow')
+    i += 1
 plt.show()
