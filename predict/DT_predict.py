@@ -23,16 +23,13 @@ parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
 file1_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
 file2_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
-file3_in = os.path.join(data_path, 'featureMat_holiday_line6_checked.txt')
 file4_in = os.path.join(data_path, 'featureMat_workday_line11_checked.txt')
 file5_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
-file6_in = os.path.join(data_path, 'featureMat_holiday_line11_checked.txt')
 X1, y1 = preprocess(file1_in)
 X2, y2 = preprocess(file2_in)
-X3, y3 = preprocess(file3_in)
 X4, y4 = preprocess(file4_in)
 X5, y5 = preprocess(file5_in)
-X6, y6 = preprocess(file6_in)
+
 work_weather = [[3, 23, 14, 1],
                 [16, 23, 17, 1],
                 [23, 24, 14, 6],
@@ -46,16 +43,12 @@ rest_weather = [[10, 19, 6, 1],
 # Fit regression model|
 clf1 = tree.DecisionTreeRegressor(min_samples_leaf=20)
 clf2 = tree.DecisionTreeRegressor(min_samples_leaf=6)
-clf3 = tree.DecisionTreeRegressor(min_samples_leaf=2)
 clf4 = tree.DecisionTreeRegressor(min_samples_leaf=20)
 clf5 = tree.DecisionTreeRegressor(min_samples_leaf=6)
-clf6 = tree.DecisionTreeRegressor(min_samples_leaf=2)
 clf1.fit(X1, y1)
 clf2.fit(X2, y2)
-clf3.fit(X3, y3)
 clf4.fit(X4, y4)
 clf5.fit(X5, y5)
-clf6.fit(X6, y6)
 
 ###############################################################################
 # Predict new data
@@ -87,13 +80,11 @@ for w in rest_weather:
         b.append(str(rest_weather.index(w) + 1))
         c = ''.join(b)
         a2 = clf2.predict(p)
-        a3 = clf3.predict(p)
         if i < 10:
             out1 = ','.join([u'线路6', c, ''.join(['0', str(i)]), str(int(a2[0]))])
         else:
             out1 = ','.join([u'线路6', c, str(i), str(int(a2[0]))])
         a5 = clf5.predict(p)
-        a6 = clf6.predict(p)
         if i < 10:
             out2 = ','.join([u'线路11', c, ''.join(['0', str(i)]), str(int(a5[0]))])
         else:

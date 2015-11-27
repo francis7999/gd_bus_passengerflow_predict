@@ -22,16 +22,12 @@ parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
 file1_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
 file2_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
-file3_in = os.path.join(data_path, 'featureMat_holiday_line6_checked.txt')
 file4_in = os.path.join(data_path, 'featureMat_workday_line11_checked.txt')
 file5_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
-file6_in = os.path.join(data_path, 'featureMat_holiday_line11_checked.txt')
 X1, y1 = preprocess(file1_in)
 X2, y2 = preprocess(file2_in)
-X3, y3 = preprocess(file3_in)
 X4, y4 = preprocess(file4_in)
 X5, y5 = preprocess(file5_in)
-X6, y6 = preprocess(file6_in)
 work_weather = [[3, 23, 14, 1],
                 [16, 23, 17, 1],
                 [23, 24, 14, 6],
@@ -47,26 +43,18 @@ params1 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
           'learning_rate': 0.005, 'loss': 'ls'}
 params2 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
           'learning_rate': 0.005, 'loss': 'ls'}
-params3 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
 params4 ={'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
           'learning_rate': 0.005, 'loss': 'ls'}
 params5 = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
           'learning_rate': 0.005, 'loss': 'ls'}
-params6 = {'n_estimators': 1500, 'max_depth': 5, 'min_samples_split': 1,
-          'learning_rate': 0.005, 'loss': 'ls'}
 clf1 = ensemble.GradientBoostingRegressor(**params1)
 clf2 = ensemble.GradientBoostingRegressor(**params2)
-clf3 = ensemble.GradientBoostingRegressor(**params3)
 clf4 = ensemble.GradientBoostingRegressor(**params4)
 clf5 = ensemble.GradientBoostingRegressor(**params5)
-clf6 = ensemble.GradientBoostingRegressor(**params6)
 clf1.fit(X1, y1)
 clf2.fit(X2, y2)
-clf3.fit(X3, y3)
 clf4.fit(X4, y4)
 clf5.fit(X5, y5)
-clf6.fit(X6, y6)
 
 ###############################################################################
 # Predict new data
@@ -98,13 +86,11 @@ for w in rest_weather:
         b.append(str(rest_weather.index(w) + 1))
         c = ''.join(b)
         a2= clf2.predict(p)
-        a3 = clf3.predict(p)
         if i<10 :
             out1 = ','.join([u'线路6', c, ''.join(['0',str(i)]), str(int(a2[0]))])
         else:
             out1 = ','.join([u'线路6', c, str(i), str(int(a2[0]))])
         a5 = clf5.predict(p)
-        a6 = clf6.predict(p)
         if i<10 :
             out2 = ','.join([u'线路11', c, ''.join(['0',str(i)]), str(int(a5[0]))])
         else:
