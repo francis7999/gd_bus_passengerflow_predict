@@ -18,7 +18,7 @@ import os
 # Load data
 parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
-file_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
+file_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
 X,y = load_X_Y.load_X_Y(file_in)
 X = np.array(X)
 y = np.array(y)
