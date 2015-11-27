@@ -46,8 +46,8 @@ for rand_s in [10, 50, 100, 300, 500, 900, 1400, 4500, 3400, 22] :
 
     ###############################################################################
     # Fit regression model|
-    params = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
-                 'learning_rate': 0.005, 'loss': 'lad', 'min_samples_leaf' :20}
+    params = {'n_estimators':2000, 'max_depth': 3, 'min_samples_split': 1,
+                 'learning_rate': 0.005, 'loss': 'ls'}
     clf = ensemble.GradientBoostingRegressor(**params)
     clf.fit(X_train, y_train)
     ###############################################################################
