@@ -10,13 +10,17 @@ from sklearn.utils import shuffle
 from sklearn.metrics import mean_squared_error
 import load_X_Y
 import math
+import os
 
 ###############################################################################
 # Load data
-X,y = load_X_Y.load_X_Y('featureMat_workday_line10.txt_checked')
+parent_path = os.path.dirname(os.getcwd())
+data_path = os.path.join(parent_path, 'train_data')
+file_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
+X,y = load_X_Y.load_X_Y(file_in)
 X = np.array(X)
 y = np.array(y)
-rand_s = 20
+rand_s = 400
 X, y = shuffle(X, y, random_state=rand_s)
 X = X.astype(np.float32)
 offset = int(X.shape[0] * 0.9)
@@ -27,7 +31,8 @@ X_test, y_test = X[offset:], y[offset:]
 
 ###############################################################################
 # Fit regression model
-clf = ensemble.RandomForestRegressor(random_state=0, n_estimators= 10000)
+params = {'random_state' : 0, 'n_estimators' : 10000}
+clf = ensemble.RandomForestRegressor(**params)
 
 clf.fit(X_train, y_train)
 

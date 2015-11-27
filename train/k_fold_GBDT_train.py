@@ -17,10 +17,14 @@ import os
 # Load data
 parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
-file_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
+file_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
 X,y = load_X_Y.load_X_Y(file_in)
 X = np.array(X)
 y = np.array(y)
+
+
+###############################################################################
+# 10_fold randomly assign
 rand_s = 400
 X, y = shuffle(X, y, random_state=rand_s)
 X = X.astype(np.float32)
@@ -41,7 +45,7 @@ print("root_of_mean_squared_error_of_testset: %.4f" % math.sqrt(mse))
 print("random_state: %d, n_estimators： %d, max_depth: %d, min_samples_split: %d, learning_rate: %d, loss_func: %s" % (rand_s, params['n_estimators'],  params['max_depth'],  params['min_samples_split'],  params['learning_rate'],  params['loss']))
 
 ###############################################################################
-# k-flod cross validation
+# 10-flod cross validation
 numberOfError_train = 0
 for n in range(len(X_train)):
     if abs(clf.predict(X_train[n]) - y_train[n]) >=200:
@@ -58,7 +62,7 @@ print "测试集错误率（阀值200）\n"
 print float(numberOfError_test)/float(len(X_test))
 print '\n'
 
-fout1 = open('GBDT_out_training.txt','w')
+'''fout1 = open('GBDT_out_training.txt','w')
 fout1.write("训练集错误率（阀值200）\n")
 fout1.write(str(float(numberOfError_train)/float(len(X_train))))
 fout1.write('\n')
@@ -83,8 +87,8 @@ for n in range(len(X_test)):
     for i in range(len(c)):
         c[i] = str(c[i])
     fout2.write('\t'.join([''.join(a), str(y_test[n]), ''.join(c), '\n']))
-fout2.close()
-###############################################################################
+fout2.close()'''
+'''###############################################################################
 # Plot training deviance
 
 # compute test set deviance
@@ -103,7 +107,7 @@ plt.plot(np.arange(params['n_estimators']) + 1, test_score, 'r-',
 plt.legend(loc='upper right')
 plt.xlabel('Boosting Iterations')
 plt.ylabel('Deviance')
-
+'''
 ###############################################################################
 # Plot feature importance
 feature_importance = clf.feature_importances_
@@ -118,3 +122,53 @@ plt.yticks(pos, a[sorted_idx])
 plt.xlabel('Relative Importance')
 plt.title('Variable Importance')
 plt.show()
+
+
+X_train_array = list()
+y_train_array = list()
+X_test_array = list()
+y_test_array = list()
+mse_s = list()
+train_error_rate = list()
+test_error_rate = list()
+feature_importances = list()
+for rand_s in range[100, 1100, 100] :
+    ###############################################################################
+    # 10_fold randomly assign
+    X, y = shuffle(X, y, random_state=rand_s)
+    X = X.astype(np.float32)
+    offset = int(X.shape[0] * 0.9)
+    X_train, y_train = X[:offset], y[:offset]
+    X_test, y_test = X[offset:], y[offset:]
+    X_train_array.append(X_train)
+    y_train_array.append(y_train)
+    X_test_array.append(X_test)
+    y_test_array.append(y_test)
+
+    ###############################################################################
+    # Fit regression model|
+    params = {'n_estimators':1500, 'max_depth': 3, 'min_samples_split': 1,
+                 'learning_rate': 0.005, 'loss': 'ls'}
+    clf = ensemble.GradientBoostingRegressor(**params)
+    clf.fit(X_train, y_train)
+
+    ###############################################################################
+    #mean squared error
+    mse = mean_squared_error(y_test, clf.predict(X_test))
+    mse_s.append(mse)
+    ###############################################################################
+    # 10-flod cross validation
+    numberOfError_train = 0
+    for n in range(len(X_train)):
+        if abs(clf.predict(X_train[n]) - y_train[n]) >=200:
+            numberOfError_train +=1
+    train_error_rate.append(float(numberOfError_train)/float(len(X_train)))
+    numberOfError_test = 0
+    for n in range(len(X_test)):
+        if abs(clf.predict(X_test[n]) - y_test[n]) >=200:
+            numberOfError_test +=1
+    test_error_rate.append(float(numberOfError_test)/float(len(X_test)))
+    ###############################################################################
+    # feature importances
+    feature_importance = clf.feature_importances_
+    feature_importances.append(feature_importance)
