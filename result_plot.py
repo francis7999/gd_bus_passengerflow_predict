@@ -3,7 +3,7 @@
 import os
 import matplotlib.pyplot as plt
 cur_path = os.getcwd()
-data_path = os.path.join(cur_path, 'history_submitted_files/11.27')
+data_path = os.path.join(cur_path, 'history_submitted_files/11.29_v2')
 file_in1 = open(os.path.join(data_path, 'GBDT_predict_data.txt'))
 file_in2 = open(os.path.join(data_path, 'DT_predict_data.txt'))
 arrayOfLines1 = file_in1.readlines()
@@ -66,7 +66,7 @@ for key in GBDT_line6_x :
     plt.legend(loc='lower left')
     plt.xlabel(''.join([key, '_line6']))
     plt.ylabel('passenger flow')
-    plt.savefig(''.join([key, '_line6','.png']), dpi = 72)
+    plt.savefig(''.join(['line6_',  key,'.png']), dpi = 72)
     i += 1
 file_in1.close()
 file_in2.close()
@@ -133,7 +133,7 @@ for key in GBDT_line11_x :
     plt.legend(loc='lower left')
     plt.xlabel(''.join([key, '_line11']))
     plt.ylabel('passenger flow')
-    plt.savefig(''.join([key, '_line11','.png']), dpi = 72)
+    plt.savefig(''.join(['line11_', key, '.png']), dpi = 72)
     i += 1
 file_in1.close()
 file_in2.close()

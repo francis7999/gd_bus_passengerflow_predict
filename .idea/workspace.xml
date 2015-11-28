@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9daca36-23bb-440b-a7f9-b3cd18989d1d" name="Default" comment="" />
+    <list default="true" id="e9daca36-23bb-440b-a7f9-b3cd18989d1d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess/feature_Mat_check.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess/merge_rest_holiday.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_haliday_line10.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_haliday_line15.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_restday_line10.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_restday_line15.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_workday_line10.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_workday_line15.txt_checked" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_haliday_line10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_haliday_line15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_restday_line10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_restday_line15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_workday_line10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_workday_line15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_holiday_line11_checked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_holiday_line6_checked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_restday_line11_checked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_restday_line6_checked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_workday_line11_checked.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_workday_line6_checked.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/DT_predict.py" afterPath="$PROJECT_DIR$/predict/DT_predict.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/DT_predict_data.txt" afterPath="$PROJECT_DIR$/predict/DT_predict_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/GBDT_predict.py" afterPath="$PROJECT_DIR$/predict/GBDT_predict.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/GBDT_predict_data.txt" afterPath="$PROJECT_DIR$/predict/GBDT_predict_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result_plot.py" afterPath="$PROJECT_DIR$/result_plot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/decision_tree_iteration.py" afterPath="$PROJECT_DIR$/train/decision_tree_iteration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/iteration.txt" afterPath="$PROJECT_DIR$/train/iteration.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/k_fold_GBDT_train.py" afterPath="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
+    </list>
     <ignored path="公交线路客流预测.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +51,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Statistics.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preprocess/Statistics.py">
+      <file leaf-file-name="k_fold_GBDT_train.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="13" selection-end-line="49" selection-end-column="74" />
               <folding>
-                <element signature="e#143#152#0" expanded="true" />
+                <element signature="e#42#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,31 +67,17 @@
         <entry file="file://$PROJECT_DIR$/train/decision_tree_iteration.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="e#42#60#0" expanded="true" />
-              </folding>
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="k_fold_GBDT_train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="e#42#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_plot.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="result_plot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/result_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="58" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="58" />
+            <state vertical-scroll-proportion="6.5267177">
+              <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
               <folding>
                 <element signature="e#42#51#0" expanded="true" />
               </folding>
@@ -69,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="national_day_plot.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/national_day_plot.py">
+      <file leaf-file-name="contrast_everyday_plot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contrast_everyday_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41237113">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="58" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -85,21 +101,9 @@
         <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="75" />
+              <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="k_fold_random_forests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train/k_fold_random_forests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/predict/DT_predict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
               </folding>
@@ -148,12 +152,14 @@
         <option value="$PROJECT_DIR$/train/DT_predict.py" />
         <option value="$PROJECT_DIR$/train/GBDT_predict.py" />
         <option value="$PROJECT_DIR$/train/k_fold_random_forests.py" />
+        <option value="$PROJECT_DIR$/national_day_plot.py" />
+        <option value="$PROJECT_DIR$/preprocess/feature_Mat_check.py" />
+        <option value="$PROJECT_DIR$/preprocess/merge_rest_holiday.py" />
         <option value="$PROJECT_DIR$/train/decision_tree_iteration.py" />
         <option value="$PROJECT_DIR$/predict/DT_predict.py" />
-        <option value="$PROJECT_DIR$/predict/GBDT_predict.py" />
         <option value="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
+        <option value="$PROJECT_DIR$/predict/GBDT_predict.py" />
         <option value="$PROJECT_DIR$/result_plot.py" />
-        <option value="$PROJECT_DIR$/national_day_plot.py" />
       </list>
     </option>
   </component>
@@ -203,6 +209,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,10 +228,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="公交线路客流预测" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gd_line_pop_predict" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="公交线路客流预测" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gd_line_pop_predict" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="predict" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,24 +276,7 @@
       <recent name="E:\学习相关\阿里大数据竞赛\公交线路客流预测\preprocess" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.national_day_plot">
-    <configuration default="false" name="k_fold_GBDT_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="公交线路客流预测" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.result_plot">
     <configuration default="false" name="DT_predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,23 +290,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="公交线路客流预测" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict/DT_predict.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="GBDT_predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predict" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="公交线路客流预测" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict/GBDT_predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -311,21 +311,55 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="national_day_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="GBDT_predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predict" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="公交线路客流预测" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/national_day_plot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict/GBDT_predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="decision_tree_iteration" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="公交线路客流预测" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/decision_tree_iteration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="k_fold_GBDT_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="公交线路客流预测" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -451,19 +485,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
-      <item index="1" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.GBDT_predict (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.result_plot" />
-      <item index="4" class="java.lang.String" itemvalue="Python.national_day_plot" />
+      <item index="0" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.result_plot" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GBDT_predict" />
+      <item index="3" class="java.lang.String" itemvalue="Python.decision_tree_iteration" />
+      <item index="4" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.national_day_plot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.result_plot" />
-        <item index="2" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
-        <item index="3" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.GBDT_predict (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.result_plot" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GBDT_predict" />
+        <item index="3" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
+        <item index="4" class="java.lang.String" itemvalue="Python.decision_tree_iteration" />
       </list>
     </recent_temporary>
   </component>
@@ -489,11 +523,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -521,80 +555,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
+    <entry file="file://$PROJECT_DIR$/train/decision_tree_iteration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_random_forests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict/DT_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/Statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_random_forests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/ultimate_feature_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,39 +584,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="73" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/Statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/decision_tree_iteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="73" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="60" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,9 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="60" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,9 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="60" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="60" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="60" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/feature_extraction_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7133621">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preprocess/ultimate_feature_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -878,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#143#152#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,10 +796,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train/k_fold_random_forests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_holiday_line6.txt_checked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.128866">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_holiday_line6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.128866">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_holiday_line11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_holiday_line11.txt_checked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0515466">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_workday_line6.txt_checked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-77.64433">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_workday_line6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-78.23196">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_restday_line11.txt_checked.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.06701">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_data/featureMat_restday_line11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.06701">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/merge_rest_holiday.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3427835">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/feature_Mat_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3427835">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess/feature_extraction_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04896907">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/train/decision_tree_iteration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contrast_everyday_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="13" selection-end-line="49" selection-end-column="74" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
           </folding>
@@ -904,59 +921,29 @@
     <entry file="file://$PROJECT_DIR$/predict/DT_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <element signature="e#42#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_random_forests.py">
+    <entry file="file://$USER_HOME$/学习相关/统计信号建模/assign1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#43#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="75" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="58" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="58" />
+        <state vertical-scroll-proportion="6.5267177">
+          <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
           <folding>
             <element signature="e#42#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/national_day_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41237113">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

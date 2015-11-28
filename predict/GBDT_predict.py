@@ -20,10 +20,10 @@ fout = codecs.open('GBDT_predict_data.txt', 'w', "utf-8")
 # Load data
 parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
-file1_in = os.path.join(data_path, 'featureMat_workday_line6_checked.txt')
-file2_in = os.path.join(data_path, 'featureMat_restday_line6_checked.txt')
-file4_in = os.path.join(data_path, 'featureMat_workday_line11_checked.txt')
-file5_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
+file1_in = os.path.join(data_path, 'featureMat_workday_line6.txt_checked.txt')
+file2_in = os.path.join(data_path, 'featureMat_merge_rest_line6.txt')
+file4_in = os.path.join(data_path, 'featureMat_workday_line11.txt_checked.txt')
+file5_in = os.path.join(data_path, 'featureMat_merge_rest_line11.txt')
 X1, y1 = preprocess(file1_in)
 X2, y2 = preprocess(file2_in)
 X4, y4 = preprocess(file4_in)
@@ -39,14 +39,14 @@ rest_weather = [[10, 19, 6, 1],
 
 ###############################################################################
 # Fit regression model|
-params1 = {'n_estimators':3500, 'max_depth': 4, 'min_samples_split': 20,
-              'min_samples_leaf' : 18,'learning_rate': 0.001, 'loss': 'ls'}
-params2 = {'n_estimators':3000, 'max_depth': 5,
-              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
+params1 = {'n_estimators':3500, 'max_depth': 5,
+              'min_samples_leaf' : 16,'learning_rate': 0.001, 'loss': 'ls'}
+params2 = {'n_estimators':3500, 'max_depth': 5,
+              'min_samples_leaf' : 10,'learning_rate': 0.001, 'loss': 'ls'}
 params4 = {'n_estimators':3500, 'max_depth': 5,
               'min_samples_leaf' : 16,'learning_rate': 0.001, 'loss': 'ls'}
-params5 = {'n_estimators':3000, 'max_depth': 5,
-              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
+params5 = {'n_estimators':3200, 'max_depth': 5,
+              'min_samples_leaf' : 7,'learning_rate': 0.001, 'loss': 'ls'}
 clf1 = ensemble.GradientBoostingRegressor(**params1)
 clf2 = ensemble.GradientBoostingRegressor(**params2)
 clf4 = ensemble.GradientBoostingRegressor(**params4)
