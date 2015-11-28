@@ -14,7 +14,7 @@ import os
 # Load data
 parent_path = os.path.dirname(os.getcwd())
 data_path = os.path.join(parent_path, 'train_data')
-file_in = os.path.join(data_path, 'featureMat_restday_line11_checked.txt')
+file_in = os.path.join(data_path, 'featureMat_workday_line11_checked.txt')
 X,y = load_X_Y.load_X_Y(file_in)
 X = np.array(X)
 y = np.array(y)
@@ -46,8 +46,8 @@ for rand_s in [10, 50, 100, 300, 500, 900, 1400, 4500, 3400, 22] :
 
     ###############################################################################
     # Fit regression model|
-    params = {'n_estimators':3000, 'max_depth': 5,
-              'min_samples_leaf' : 5,'learning_rate': 0.001, 'loss': 'ls'}
+    params = {'n_estimators':3500, 'max_depth': 5,
+              'min_samples_leaf' : 16,'learning_rate': 0.001, 'loss': 'ls'}
     clf = ensemble.GradientBoostingRegressor(**params)
     clf.fit(X_train, y_train)
     ###############################################################################
