@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9daca36-23bb-440b-a7f9-b3cd18989d1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess/feature_Mat_check.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/preprocess/merge_rest_holiday.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_haliday_line10.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_haliday_line15.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_restday_line10.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_restday_line15.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_workday_line10.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/checked/featureMat_workday_line15.txt_checked" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_haliday_line10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_haliday_line15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_restday_line10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_restday_line15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_workday_line10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/featureMat/featureMat_workday_line15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_holiday_line11_checked.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_holiday_line6_checked.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_restday_line11_checked.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_restday_line6_checked.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_workday_line11_checked.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/train_data/featureMat_workday_line6_checked.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/DT_predict.py" afterPath="$PROJECT_DIR$/predict/DT_predict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/DT_predict_data.txt" afterPath="$PROJECT_DIR$/predict/DT_predict_data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/GBDT_predict.py" afterPath="$PROJECT_DIR$/predict/GBDT_predict.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predict/GBDT_predict_data.txt" afterPath="$PROJECT_DIR$/predict/GBDT_predict_data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result_plot.py" afterPath="$PROJECT_DIR$/result_plot.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/decision_tree_iteration.py" afterPath="$PROJECT_DIR$/train/decision_tree_iteration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/iteration.txt" afterPath="$PROJECT_DIR$/train/iteration.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/k_fold_GBDT_train.py" afterPath="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
     </list>
     <ignored path="公交线路客流预测.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result_plot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result_plot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/result_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.5267177">
+            <state vertical-scroll-proportion="0.0">
               <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
               <folding>
                 <element signature="e#42#51#0" expanded="true" />
@@ -101,10 +73,30 @@
         <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="57" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/history_submitted_files/11.29_v2/process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7099237">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GBDT_predict_data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/history_submitted_files/11.29_v2/GBDT_predict_data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,12 +152,13 @@
         <option value="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
         <option value="$PROJECT_DIR$/predict/GBDT_predict.py" />
         <option value="$PROJECT_DIR$/result_plot.py" />
+        <option value="$PROJECT_DIR$/history_submitted_files/11.29_v2/process.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1377" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -209,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,9 +250,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="公交线路客流预测" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gd_line_pop_predict" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="history_submitted_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="11.29_v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="公交线路客流预测" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gd_line_pop_predict" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="history_submitted_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +301,7 @@
       <recent name="E:\学习相关\阿里大数据竞赛\公交线路客流预测\preprocess" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.result_plot">
+  <component name="RunManager" selected="Python.process">
     <configuration default="false" name="DT_predict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,23 +353,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="decision_tree_iteration" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/train" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="公交线路客流预测" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/decision_tree_iteration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="k_fold_GBDT_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -360,6 +368,23 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train/k_fold_GBDT_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="process" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/history_submitted_files/11.29_v2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="公交线路客流预测" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/history_submitted_files/11.29_v2/process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -488,16 +513,16 @@
       <item index="0" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
       <item index="1" class="java.lang.String" itemvalue="Python.result_plot" />
       <item index="2" class="java.lang.String" itemvalue="Python.GBDT_predict" />
-      <item index="3" class="java.lang.String" itemvalue="Python.decision_tree_iteration" />
-      <item index="4" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
+      <item index="3" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
+      <item index="4" class="java.lang.String" itemvalue="Python.process" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.result_plot" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.GBDT_predict" />
-        <item index="3" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
-        <item index="4" class="java.lang.String" itemvalue="Python.decision_tree_iteration" />
+        <item index="0" class="java.lang.String" itemvalue="Python.process" />
+        <item index="1" class="java.lang.String" itemvalue="Python.result_plot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.DT_predict (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GBDT_predict" />
+        <item index="4" class="java.lang.String" itemvalue="Python.k_fold_GBDT_train" />
       </list>
     </recent_temporary>
   </component>
@@ -515,10 +540,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-8" y="0" width="1377" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24669604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2468773" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -555,21 +580,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/train/decision_tree_iteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess/Statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train/k_fold_GBDT_train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -908,16 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/predict/DT_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -932,19 +932,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.5267177">
+        <state vertical-scroll-proportion="0.0">
           <caret line="135" column="33" selection-start-line="135" selection-start-column="33" selection-end-line="135" selection-end-column="33" />
           <folding>
             <element signature="e#42#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history_submitted_files/11.29_v2/GBDT_predict_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predict/GBDT_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="57" />
+          <folding>
+            <element signature="e#42#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history_submitted_files/11.29_v2/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7099237">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
