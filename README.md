@@ -8,3 +8,7 @@ requirements:
 ------python2.7
 
 ------numpy、matplotlib、scipy、scikit-learn
+
+------final score 76.99%
+
+------final rank 83/2734
